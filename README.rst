@@ -18,6 +18,7 @@ heaptrace will output information about calls to malloc, realloc, and free
     - the return value of the call
 
 ::
+
     % LD_PRELOAD=heap_trace.so ./nc
     0x7f2287787492: malloc(5) = 0xec4010
     0x7f228778232e: free(0xec4010)
