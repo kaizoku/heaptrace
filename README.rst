@@ -26,3 +26,7 @@ heaptrace will output information about calls to malloc, realloc, and free
     0x7f22877879f0: free(0xec6360)
     0x7f2287785aa7: free(0xec4f00)
     nc: you must specify the address/port couple of the remote endpoint
+
+Building
+========
+Run ``make``
