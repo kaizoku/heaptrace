@@ -55,7 +55,7 @@ static void init_hook(void)
     old_free_hook = __free_hook;
     __free_hook = free_hook;
 }
-void (*__malloc_initialize_hook)(void) = init_hook;
+void (*__MALLOC_HOOK_VOLATILE __malloc_initialize_hook)(void) = init_hook;
 
 static void* malloc_hook(size_t size, const void *caller)
 {
